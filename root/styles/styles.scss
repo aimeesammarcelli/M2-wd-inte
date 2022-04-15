@@ -569,158 +569,6 @@ footer{
   }
 }
 
-// Reponsive
-
-@media screen and (max-width: 640px) {
-  body{
-    margin: 0 10px;
-  }
-
-  header{
-    flex-wrap: wrap;
-
-    .cards{
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .coder-connexion{
-      box-shadow: none;
-    }
-  }
-
-  .startBulding{
-    width: 100%;
-  }
-
-  .section #one{
-    top: 100%;
-    left: 0%;
-  }
-
-  .section #deux{
-    top: 100%;
-    left: 0%;
-  }
-
-  .section #trois{
-    top: 100%;
-    left: 0%;
-  }
-
-  .horaires{
-    width: 90%;
-    border: 0;
-  }
-
-  .video{
-    flex-wrap: wrap;
-    margin-top: 560px!important;
-
-   iframe{
-    width: 100%;
-   }
-
-   .videoIframe{
-     width: 100%;
-   }
-  }
-
-
-  .Authorization{
-    margin-top: 0px!important;
-  }
-
-  .Authorization .authoLeft{
-    margin-left: 0;
-    top: 520px;
-    div{
-      width: 100%;
-    }
-
-  }
-
-  .firstVideo{
-    width: 100%!important;
-  }
-
-  .plateform{
-    width: 75%;
-    left: 0px;
-    top: 100px;
-  }
-
-  .authorizationImgBack img{
-    width: 100%;
-  }
-
-  .subscribe{
-    margin-top: 80px;
-    height: 729px;
-    flex-wrap: wrap;
-  }
-
-  .subscrideBack{
-    top: 0;
-
-    img{
-      width: 100%;
-    }
-  }
-
-
-  .subscribe .subscrideLeft{
-    width: 90%;
-
-    p{
-      color: black;
-    }
-  }
-
-  .Sevendays{
-    h2{
-      width: 100%!important;
-      font-size: 70px;
-    }
-    p{
-      width: 100%!important;
-    }
-  }
-
-  footer{
-    flex-wrap: wrap;
-
-    .footerNavigation{
-      flex-wrap: wrap;
-    }
-  }
-
-  .nav-container{
-    img{
-      display: none;
-    }
-    .cta-nav{
-      display: none;
-    }
-  }
-
-  header .ellipse-red{
-    background-image: none;
-  }
-
-  header .ellipse-yellow{
-    background-image: none;
-  }
-
-  header h1{
-    font-size: 75px;
-  }
-
-  .calendar{
-    margin-top: 360px;
-  }
-}
-
 
 
 // Calendar
@@ -936,3 +784,355 @@ select {
     position: calc(100% - var(--side-padding)) center;
   }
 }
+
+
+
+//animate svg
+
+
+
+.animate-svg {
+  
+  a {
+    color: black;
+    padding: 0.7em calc(#{0.7em} * 1.2);
+    display: inline-block;
+    border: 3px solid transparent;
+    position: relative;
+    font-size: 1.5em;
+    cursor: pointer;
+    letter-spacing: 0.07em;
+
+    .text {
+      transform: translate3d(0,0.7em,0);
+      display: block;
+      transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      bottom: -3px;
+      left: calc(#{0.7em} * 1.2);
+      right: calc(#{0.7em} * 1.2);
+      height: 3px;
+      background: $red;
+      // z-index: -1;
+      transition: 
+        transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
+        right 0.2s cubic-bezier(.04,.48,0,1) 0.6s,
+        left 0.4s cubic-bezier(.04,.48,0,1) 0.6s;
+      transform-origin: left;
+    }
+
+  }
+
+  .line {
+    position: absolute;
+    background: $red;
+
+    &.-right,
+    &.-left {
+      width: 3px;
+      bottom: -3px;
+      top: -3px;
+      transform: scale3d(1,0,1);
+    }  
+
+    &.-top,
+    &.-bottom {
+      height: 3px;
+      left: -3px;
+      right: -3px;
+      transform: scale3d(0,1,1);
+    }
+
+    &.-right {
+      right: -3px;
+      transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
+      transform-origin: top;
+    }
+
+    &.-top {
+      top: -3px;
+      transition: transform 0.08s linear 0.43s;
+      transform-origin: left;
+    }
+
+    &.-left {
+      left: -3px;
+      transition: transform 0.08s linear 0.51s;
+      transform-origin: bottom;
+    }
+
+    &.-bottom {
+      bottom: -3px;
+      transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
+      transform-origin: right;
+    }  
+  }
+
+  a:hover,
+  a:active {
+
+    .text {
+      transform: translate3d(0,0,0);
+      transition: transform 0.6s cubic-bezier(.2,0,0,1) 0.4s;
+    }
+
+    &:after {
+      transform: scale3d(0,1,1);
+      right: -3px;
+      left: -3px;
+      transform-origin: right;
+      transition: 
+        transform 0.2s cubic-bezier(1,0,.65,1.01) 0.17s,
+        right 0.2s cubic-bezier(1,0,.65,1.01),
+        left 0s 0.3s;
+    }
+
+    .line {
+      transform: scale3d(1,1,1);
+
+      &.-right {
+        transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.2s;
+        transform-origin: bottom;
+      }
+
+      &.-top {
+        transition: transform 0.08s linear 0.4s;
+        transform-origin: right;
+      }
+
+      &.-left {
+        transition: transform 0.08s linear 0.48s;
+        transform-origin: top;
+      }
+
+      &.-bottom {
+        transition: transform 0.5s cubic-bezier(0,.53,.29,1) 0.56s;
+        transform-origin: left;
+      }
+    }
+
+  }
+}
+
+
+// Accordion
+
+.accordionFirst{
+  margin-top: 130px;
+}
+
+.accordion{
+	transform: translateZ(0);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.accordion > .accordion-toggle{
+	position: absolute;
+	opacity: 0;
+	display: none;
+}
+
+.accordion > label{
+	position: relative;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	font-size: 40px;
+	font-weight: 700;
+	border-top: 1px solid #ddd;
+	background: #fff;
+	cursor: pointer;
+}
+
+.accordion > label:after {
+  content: '\f060';
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-family: fontawesome;
+  transform: rotate(90deg);
+  transition: .3s transform;
+}
+
+.accordion > section{
+	height: 0;
+	transition: .3s all;
+	overflow: hidden;
+}
+
+.accordion > .accordion-toggle:checked ~ label:after{
+ transform: rotate(0deg);
+}
+
+.accordion > .accordion-toggle:checked ~ section{
+  height: 200px;
+}
+
+.accordion > section p {
+  margin: 15px 0;
+  padding: 0 20px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+
+
+// Reponsive
+
+@media screen and (max-width: 640px) {
+  body{
+    margin: 0 10px;
+  }
+
+  header{
+    flex-wrap: wrap;
+
+    .cards{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .coder-connexion{
+      box-shadow: none;
+    }
+  }
+
+  .startBulding{
+    width: 100%;
+  }
+
+  .section #one{
+    top: 100%;
+    left: 0%;
+  }
+
+  .section #deux{
+    top: 100%;
+    left: 0%;
+  }
+
+  .section #trois{
+    top: 100%;
+    left: 0%;
+  }
+
+  .horaires{
+    width: 90%;
+    border: 0;
+  }
+
+  .video{
+    flex-wrap: wrap;
+    margin-top: 560px!important;
+
+   iframe{
+    width: 100%;
+   }
+
+   .videoIframe{
+     width: 100%;
+   }
+  }
+
+
+  .Authorization{
+    margin-top: 0px!important;
+  }
+
+  .Authorization .authoLeft{
+    margin-left: 0;
+    top: 520px;
+    div{
+      width: 100%;
+    }
+
+  }
+
+  .firstVideo{
+    width: 100%!important;
+  }
+
+  .plateform{
+    width: 75%;
+    left: 0px;
+    top: 100px;
+  }
+
+  .authorizationImgBack img{
+    width: 100%;
+  }
+
+  .subscribe{
+    margin-top: 80px;
+    height: 729px;
+    flex-wrap: wrap;
+  }
+
+  .subscrideBack{
+    top: 0;
+
+    img{
+      width: 100%;
+    }
+  }
+
+
+  .subscribe .subscrideLeft{
+    width: 90%;
+
+    p{
+      color: black;
+    }
+  }
+
+  .Sevendays{
+    h2{
+      width: 100%!important;
+      font-size: 70px;
+    }
+    p{
+      width: 100%!important;
+    }
+  }
+
+  footer{
+    flex-wrap: wrap;
+
+    .footerNavigation{
+      flex-wrap: wrap;
+    }
+  }
+
+  .nav-container{
+    img{
+      display: none;
+    }
+    .cta-nav{
+      display: none;
+    }
+  }
+
+  header .ellipse-red{
+    background-image: none;
+  }
+
+  header .ellipse-yellow{
+    background-image: none;
+  }
+
+  header h1{
+    font-size: 75px;
+  }
+
+  .calendar{
+    margin-top: 360px;
+  }
+}
+
