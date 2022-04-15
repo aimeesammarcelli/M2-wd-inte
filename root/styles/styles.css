@@ -589,13 +589,32 @@ footer a {
     border: 0;
   }
 
+  .video {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 560px !important;
+  }
+  .video iframe {
+    width: 100%;
+  }
+  .video .videoIframe {
+    width: 100%;
+  }
+
   .Authorization {
-    margin-top: 360px;
+    margin-top: 0px !important;
   }
 
   .Authorization .authoLeft {
     margin-left: 0;
     top: 520px;
+  }
+  .Authorization .authoLeft div {
+    width: 100%;
+  }
+
+  .firstVideo {
+    width: 100% !important;
   }
 
   .plateform {
@@ -609,7 +628,7 @@ footer a {
   }
 
   .subscribe {
-    margin-top: 570px;
+    margin-top: 80px;
     height: 729px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -663,6 +682,10 @@ footer a {
 
   header h1 {
     font-size: 75px;
+  }
+
+  .calendar {
+    margin-top: 360px;
   }
 }
 .calendar {
