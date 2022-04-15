@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/framework.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/variables.css">
+    <title>Intégration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="circularcursor"></div>
+    <nav>
+        <input type="checkbox" id="nav" class="hidden"/>
+        <label for="nav" class="nav-open"><i></i><i></i><i></i></label>
+        <div class="nav-container flex flex--justify-between flex--align-center ">
+            <img src="assets/Logo.svg" alt="">
+          <ul>
+            <li><a href="#">Plateform</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Resource</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+          <a class="cta-nav" href="#">Login</a>
+        </div>
+      </nav>
+    
+      <header class="flex direction-row flex--align-center">
+          <div>
+              <h1 class="flex flex--align-center flex-wrap">
+                  Secure 
+                  <span class="ellipse-red">
+                      <span class="ellipse-yellow" style="padding: 7px;">
+                          access
+                      </span>
+                  </span>
+                  for developers
+              </h1>
+
+              <p>
+                Increase your company’s annual revenue, increase sales percentage and embed 
+              </p>
+          </div>
+
+          <div class="flex direction-row flex--align-center cards">
+
+            <div class="flex direction-columns">
+                <div class="coder-connexion flex direction-columns flex--align-center">
+                    <img src="assets/Logo.svg" alt="">
+                    <div class="coder-input flex direction-columns">
+                      <input type="text" class="form-control" name="Email" placeholder="Email" required=""/> 
+                      <input type="password" class="form-control" name="Password" placeholder="Password" required=""/> 
+                    </div>
+                    <div class="coder-cta flex direction-columns text-align-center">
+                        <a href="#">Login</a>
+                        <a href="#">Login with Coder-id</a>
+                    </div>
+                </div>
+    
+                <div class="coder-connexion flex direction-columns flex--align-center">
+                    <img src="assets/Logo.svg" alt="">
+                    <div class="coder-input flex direction-columns">
+                      <input type="text" class="form-control" name="Coder ID" placeholder="Coder ID" required=""/> 
+                      <input type="password" class="form-control" name="Password" placeholder="Password" required=""/> 
+                    </div>
+                    <div class="coder-cta flex direction-columns text-align-center">
+                        <a href="#">Start</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coder-connexion flex direction-columns flex--align-center" style="height: 40%;">
+                <img src="assets/Logo.svg" alt="">
+                <div class="coder-cta flex direction-columns text-align-center">
+                    <a href="#">Start your 7 days trial</a>
+                </div>
+            </div>
+      
+
+          </div>
+
+      </header>
+      
+      <!-- Logos -->
+
+      <section>
+
+        <div class="logo-slider">
+            <div class="logo-slide-track">
+                <div class="slide">
+                    <img src="/assets/Logo/amazon.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/sitepoint.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/slack.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/undies.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/woocomerce.svg" alt="" />
+                </div><div class="slide">
+                    <img src="/assets/Logo/amazon.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/sitepoint.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/slack.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/undies.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/woocomerce.svg" alt="" />
+                </div><div class="slide">
+                    <img src="/assets/Logo/amazon.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/sitepoint.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/slack.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/undies.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/woocomerce.svg" alt="" />
+                </div><div class="slide">
+                    <img src="/assets/Logo/amazon.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/sitepoint.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/slack.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/undies.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/woocomerce.svg" alt="" />
+                </div><div class="slide">
+                    <img src="/assets/Logo/amazon.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/sitepoint.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/slack.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/undies.svg" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="/assets/Logo/woocomerce.svg" alt="" />
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+
+      <!-- Start bulding -->
+
+      <section class="startBulding text-align-center">
+          <h2>
+            Start Building for
+            Free trial
+          </h2>
+          <p>
+            From improving customer experience through seamless SSO to making easy as a click of a button 
+          </p>
+      </section>
+
+      <section class="horaires" style="position: relative;">
+        <div class="section">
+            <a class="text-align-center" href="#one">First Day</a>
+          <div id="one">
+            <div class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                18 : 30 - 20 : 00
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                  Anonymous User
+                </p>
+              </div>
+                <hr>
+                <div  class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                20 : 00 - 22 : 00
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                    Directory, SSO, Social Integrations
+                </p>
+              </div>
+              <hr>
+              <div  class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                22 : 00 - 23 : 30
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                    Progressive Profiling
+                </p>
+              </div>
+              <hr>
+              <div  class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                22 : 30 - 4 : 00
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                    Auth Factors, Step-up Auth
+                </p>
+              </div>
+          </div>
+        </div>
+        
+         <div class="section">
+          <a class="text-align-center" href="#deux">Second Day</a>
+          <div id="deux">
+            <div class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                18 : 30 - 20 : 00
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                  Auth Factors, Step-up Auth
+                </p>
+              </div>
+                <hr>
+                <div  class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                20 : 00 - 22 : 00
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                    Progressive Profiling
+                </p>
+              </div>
+              <hr>
+              <div  class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                22 : 00 - 23 : 30
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                    Anonymous User
+                </p>
+              </div>
+              <hr>
+              <div  class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                22 : 30 - 4 : 00
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                    Directory, SSO, Social Integrations
+                </p>
+              </div>
+          </div>
+        </div>
+        
+         <div class="section">
+          <a class="text-align-center" href="#trois">Third Day</a>
+          <div id="trois">
+            <div class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                18 : 30 - 20 : 00
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                  Anonymous User
+                </p>
+              </div>
+                <hr>
+                <div  class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                20 : 00 - 22 : 00
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                    Auth Factors, Step-up Auth
+                </p>
+              </div>
+              <hr>
+              <div  class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                22 : 00 - 23 : 30
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                    Directory, SSO, Social Integrations
+                </p>
+              </div>
+              <hr>
+              <div  class="flex direction-row flex--align-center">
+                <p>
+              <strong>
+                22 : 30 - 4 : 00
+                  </strong>
+                </p>
+                <p style="color:#626262;">
+                    Progressive Profiling
+                </p>
+              </div>
+          </div>
+        </div>
+
+ </section>
+        <!-- calendar -->
+
+        <div class="calendar">
+          <div class="calendar__opts">
+            <select name="calendar__month" id="calendar__month">
+              <option>Jan</option>
+              <option>Feb</option>
+              <option>Mar</option>
+              <option>Apr</option>
+              <option selected>May</option>
+              <option>Jun</option>
+              <option>Jul</option>
+              <option>Aug</option>
+              <option>Sep</option>
+              <option>Oct</option>
+              <option>Nov</option>
+              <option>Dec</option>
+            </select>
+        
+            <select name="calendar__year" id="calendar__year">
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option selected>2020</option>
+            </select>
+          </div>
+        
+          <div class="calendar__body">
+            <div class="calendar__days">
+              <div>M</div>
+              <div>T</div>
+              <div>W</div>
+              <div>T</div>
+              <div>F</div>
+              <div>S</div>
+              <div>S</div>
+            </div>
+        
+            <div class="calendar__dates">
+              <div class="calendar__date calendar__date--grey"><span>27</span></div>
+              <div class="calendar__date calendar__date--grey"><span>28</span></div>
+              <div class="calendar__date calendar__date--grey"><span>29</span></div>
+              <div class="calendar__date calendar__date--grey"><span>30</span></div>
+              <div class="calendar__date"><span>1</span></div>
+              <div class="calendar__date"><span>2</span></div>
+              <div class="calendar__date"><span>3</span></div>
+              <div class="calendar__date"><span>4</span></div>
+              <div class="calendar__date"><span>5</span></div>
+              <div class="calendar__date"><span>6</span></div>
+              <div class="calendar__date"><span>7</span></div>
+              <div class="calendar__date"><span>8</span></div>
+              <div class="calendar__date"><span>9</span></div>
+              <div class="calendar__date"><span>10</span></div>
+              <div class="calendar__date"><span>11</span></div>
+              <div class="calendar__date"><span>12</span></div>
+              <div class="calendar__date"><span>13</span></div>
+              <div class="calendar__date"><span>14</span></div>
+              <div class="calendar__date"><span>15</span></div>
+              <div class="calendar__date calendar__date--selected calendar__date--first-date calendar__date--range-start"><span>16</span></div>
+              <div class="calendar__date calendar__date--selected calendar__date--last-date"><span>17</span></div>
+              <div class="calendar__date calendar__date--selected calendar__date--first-date"><span>18</span></div>
+              <div class="calendar__date calendar__date--selected"><span>19</span></div>
+              <div class="calendar__date calendar__date--selected"><span>20</span></div>
+              <div class="calendar__date calendar__date--selected calendar__date--last-date calendar__date--range-end"><span>21</span></div>
+              <div class="calendar__date"><span>22</span></div>
+              <div class="calendar__date"><span>23</span></div>
+              <div class="calendar__date"><span>24</span></div>
+              <div class="calendar__date"><span>25</span></div>
+              <div class="calendar__date"><span>26</span></div>
+              <div class="calendar__date"><span>27</span></div>
+              <div class="calendar__date"><span>28</span></div>
+              <div class="calendar__date"><span>29</span></div>
+              <div class="calendar__date"><span>30</span></div>
+              <div class="calendar__date"><span>31</span></div>
+            </div>
+          </div>
+        
+          <div class="calendar__buttons">
+            <button class="calendar__button calendar__button--grey">Back</button>
+        
+            <button class="calendar__button calendar__button--primary">Apply</button>
+          </div>
+        </div>
+        
+     
+
+      <!-- Authorization platform. -->
+
+      <section class="Authorization">
+          
+            <div class="plateform">
+                <div class="flex flex-direction-row">
+                    <img src="assets/Icon-terre.svg" alt="">
+                    <p>
+                      The Total Economic Impact of besnik.
+                    </p>
+                </div>
+                <hr style="color:#A6ABBD;">
+                <div class="flex flex-direction-row">
+                  <img src="assets/Icon-build.svg" alt="">
+                  <p>
+                      Build vs Buy: Guide to Identity.
+                  </p>
+              </div>
+              <hr style="color:#A6ABBD;">
+              <div class="flex flex-direction-row">
+                  <img src="assets/Icon-customer.svg" alt="">
+                  <p>
+                      2,000+ customers in over 80 countries
+                  </p>
+              </div>
+            </div>
+
+            <div class="authorizationImgBack">
+                <img src="/assets/bg-autho.svg" alt="">
+            </div>
+
+            <div class="authoLeft">
+                <img src="/assets/Icon-switch.svg" alt="">
+                <h2 style="margin-top: 0;">Authorization platform.</h2>
+                <div class="flex flex-direction-row align-items-center">
+                    <img src="/assets/Icon-stroom.svg" alt="">
+                    <p>
+                        <strong>Stroom</strong>
+                        Basically, we make your login box awesome.
+                    </p>
+                </div>
+                <div class="flex flex-direction-row align-items-center">
+                    <img src="/assets/Icon-smiirl.svg" alt="">
+                    <p>
+                        <strong>Smiirl Account</strong>
+                        Basically, we make your login box awesome.
+                    </p>
+                </div>
+            </div>
+      </section>
+
+
+      <!-- video -->
+
+      <section class="flex flex--align-center" style="margin-top: 230px;">
+
+      <div style="width: 50%;">
+        <h2 style="margin-top: 0;">Authorization platform.</h2>
+        <p>
+          <strong>Stroom</strong>
+          Basically, we make your login box awesome.
+      </p>
+      <p>
+        <strong>Smiirl Account</strong>
+        Basically, we make your login box awesome.
+    </p>
+      </div>
+
+      <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RYjfe8OSRFw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      </section>
+
+
+      <!-- Subscribe -->
+
+      <section class="subscribe flex flex--align-center">
+        <div class="subscrideLeft">
+          <h2>
+            Start Building for Free 
+          </h2>
+          <p>
+            And because your company is unique, you will need an extensible identity solution.
+          </p>
+        </div>
+        <div  class="subscrideRight">
+          <h3>
+            Subscribe
+          </h3>
+          <div>
+            <input type="text" class="form-control" name="Coder ID" placeholder="Coder ID" required=""/> 
+            <a class="cta" href="#">Login</a>
+          <p>
+            you will receive every news and pro tips
+          </p>
+          </div>
+        </div>
+        <div class="subscrideBack">
+          <img src="/assets/bg-subscribe.svg" alt="">
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <section class="Sevendays">
+        <h2 style="width: 40%;
+        margin-left: auto;
+        margin-right: auto;">
+          Get Started With 7 Days
+        </h2>
+        <p style="width: 40%;
+        margin-left: auto;
+        margin-right: auto;">
+          Optimize for user experience and privacy. Use social login integrations, lower user friction.
+        </p>
+
+        <div class="flex flex--align-center text-justify-center">
+          <a href="#">Login</a>
+          <div class="flex flex--align-center">
+            <img  style="margin:0 22px;" src="/assets/play.svg" alt="">
+            <p style="color: #E52525;">
+              Watch our platform!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="flex direction-row flex--justify-between">
+        <div>
+          <div>
+            <img src="/assets/Logo.svg" alt="">
+          </div>
+          <div>
+            <p>CONTACT</p>
+            <a style="font-size: 30px;" href="mailto:votreadresse@mail.fr">email@gmail.com</a>
+          </div>
+        </div>
+        <div class="flex direction-row footerNavigation">
+          <div class="flex direction-columns" style="margin-right: 30px;">
+            <p>Navigation</p>
+            <a href="#">Plateform</a>
+            <a href="#">Developers</a>
+            <a href="#">Resource</a>
+            <a href="#">Pricing</a>
+          </div>
+          <div class="flex direction-columns" style="margin-right: 30px;">
+            <p>Resources</p>
+            <a href="#">Blog</a>
+            <a href="#">News Updates</a>
+          </div>
+          <div class="flex direction-columns">
+            <p>Stay up to date</p>
+            <p style="width: 250px;">Stay Informed On How You Can Make a Difference</p>
+          </div>
+        </div>
+      </footer>
+      <br>
+      <br>
+      <hr style="color: #CECED9;">
+      <br>
+      <br>
+      <div class="footerEnd">
+        <p>
+          © 2021 All Rights Reserved -  Your.agency
+        </p>
+      </div>
+
+</body>
+
+<script src="styles/main.js"></script>
+
+</html>
