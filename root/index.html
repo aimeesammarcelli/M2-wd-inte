@@ -18,7 +18,9 @@
         <div class="nav-container flex flex--justify-between flex--align-center ">
             <img src="assets/Logo.svg" alt="">
           <ul>
-            <li><a href="#">Plateform</a></li>
+            <li><a href="#">Plateform</a>
+            </li>
+
             <li><a href="#">Developers</a></li>
             <li><a href="#">Resource</a></li>
             <li><a href="#">Pricing</a></li>
@@ -62,8 +64,8 @@
                 <div class="coder-connexion flex direction-columns flex--align-center" style="box-shadow: none; border: 1px solid #CECED9; background-color: #fff;">
                     <img src="assets/Logo.svg" alt="">
                     <div class="coder-input flex direction-columns">
-                      <input type="text" class="form-control" name="Coder ID" placeholder="Coder ID" required=""/> 
-                      <input type="password" class="form-control" name="Password" placeholder="Password" required=""/> 
+                      <input type="number" class="form-control" name="Coder ID" placeholder="Coder ID" required=""/> 
+                      <input type="date" class="form-control" name="Password" placeholder="Password" required=""/> 
                     </div>
                     <div class="coder-cta flex direction-columns text-align-center">
                         <a href="#">Start</a>
@@ -474,12 +476,65 @@
         <p>
           It's really a <strong>funny video</strong> that has nothing to do with the content of the previous and next site but a laugh break does not hurt
     </p>
+
+    <div class="animate-svg">
+      <a>
+        <span class="text">Hover me</span>
+        <span class="line -right"></span>
+        <span class="line -top"></span>
+        <span class="line -left"></span>
+        <span class="line -bottom"></span>
+      </a>
+    </div>
       </div>
 
       <div class="videoIframe">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/RYjfe8OSRFw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       </section>
+
+
+      <!-- Accordion -->
+
+      <div class="accordion accordionFirst">
+        <input id="toggle1" type="radio" class="accordion-toggle" name="toggle" />
+        <label for="toggle1">Reason number one</label>
+        <section>
+          <p>
+            Stroom Basically, we make your login box awesome.           
+          </p>
+        </section>
+      </div>
+      
+      <div class="accordion">
+        <input id="toggle2" type="radio" class="accordion-toggle" name="toggle" />
+        <label for="toggle2">Reason number two</label>
+        <section>
+          <p>
+            Smiirl Account Basically, we make your login box awesome. 
+          </p>
+        </section>
+      </div>
+      
+      <div class="accordion">
+        <input id="toggle3" type="radio" class="accordion-toggle" name="toggle" />
+        <label for="toggle3">Reason number three</label>
+        <section>
+          <p>
+            Build vs Buy: Guide to Identity          
+          </p>
+        </section>
+      </div>
+      
+      <div class="accordion">
+        <input id="toggle4" type="radio" class="accordion-toggle" name="toggle" />
+        <label for="toggle4">Reason number four</label>
+        <section>
+          <p>
+            2,000+ customers in over 80 countries 
+          </p>
+        </section>
+      </div>
 
 
       <!-- Subscribe -->
@@ -498,7 +553,7 @@
             Subscribe
           </h3>
           <div>
-            <input type="text" class="form-control" name="Coder ID" placeholder="Coder ID" required=""/> 
+            <input type="tel" class="form-control" name="Téléphone" placeholder="Téléphone" required=""/> 
             <a class="cta" href="#">Login</a>
           <p>
             you will receive every news and pro tips
