@@ -613,14 +613,35 @@ footer{
     border: 0;
   }
 
+  .video{
+    flex-wrap: wrap;
+    margin-top: 560px!important;
+
+   iframe{
+    width: 100%;
+   }
+
+   .videoIframe{
+     width: 100%;
+   }
+  }
+
 
   .Authorization{
-    margin-top: 360px;
+    margin-top: 0px!important;
   }
 
   .Authorization .authoLeft{
     margin-left: 0;
     top: 520px;
+    div{
+      width: 100%;
+    }
+
+  }
+
+  .firstVideo{
+    width: 100%!important;
   }
 
   .plateform{
@@ -634,7 +655,7 @@ footer{
   }
 
   .subscribe{
-    margin-top: 570px;
+    margin-top: 80px;
     height: 729px;
     flex-wrap: wrap;
   }
@@ -693,6 +714,10 @@ footer{
 
   header h1{
     font-size: 75px;
+  }
+
+  .calendar{
+    margin-top: 360px;
   }
 }
 
